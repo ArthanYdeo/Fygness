@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.profile {
+    margin: 0 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+a {
+    color: inherit; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.profile span {
+    font-size: 18px;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+.gray-img {
+    filter: grayscale(100%);
+}
+

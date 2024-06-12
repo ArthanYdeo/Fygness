@@ -1,0 +1,464 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input {
+  position: relative;
+  width: 522px;
+  height: 61px;
+  margin: 16px 0 0 23px;
+  background-color: #ffffff; /* Set background color to white */
+  color: #000000; /* Set text color to black */
+  z-index: 8;
+  border-radius: 8px;
+  border: 1px solid #ced4da; /* Add border to improve visibility */
+  padding: 0 15px; /* Add padding for better spacing */
+  font-family: inherit; /* Use the same font family as the parent */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.rectangle-register input[type="text"],
+.rectangle-register input[type="password"] {
+  width: 500px; /* Adjust width as needed */
+  margin: 10px auto; /* Center horizontally with top and bottom margin */
+  display: block; /* Ensures the input elements stack vertically */
+}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+.gym-amico {
+  position: absolute;
+  width: 874px;
+  height: 855px;
+  top: 0;
+  left: 0;
+  background: url(images/Gym-amico.png)
+    no-repeat center;
+  background-size: cover;
+}
+.rectangle {
+  position: absolute;
+  width: 568px;
+  height: 681px;
+  top: 147px;
+  left: 851px;
+  font-size: 0px;
+  background: #37326c;
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.rectangle-register {
+  position: absolute;
+  width: 568px;
+  height: auto;
+  top: 147px;
+  left: 851px;
+  font-size: 0px;
+  background: #37326c;
+  z-index: 2;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.login-your-account {
+  display: block;
+  position: relative;
+  height: 44px;
+  margin: 42px 0 0 101px;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.884px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 11;
+}
+
+.register-your-account {
+  display: block;
+  position: relative;
+  height: 44px;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 50.884px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 11;
+}
+.email-address {
+  display: block;
+  position: relative;
+  height: 29px;
+  margin: 25px 0 0 26px;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 12;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.email-address1 {
+  display: block;
+  position: relative;
+  height: 29px;
+  margin: 25px 0 0 1px;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 12;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.rectangle-1 {
+  position: relative;
+  width: 522px;
+  height: 61px;
+  margin: 16px 0 0 23px;
+  background: #ffffff;
+  z-index: 8;
+  border-radius: 8px;
+}
+.password {
+  display: block;
+  position: relative;
+  height: 29px;
+  margin: 49px 0 0 26px;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 13;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.password1 {
+  display: block;
+  position: relative;
+  height: 29px;
+  margin: 49px 0 0 1px;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 13;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.rectangle-2 {
+  position: relative;
+  width: 522px;
+  height: 61px;
+  margin: 16px 0 0 23px;
+  background: #ffffff;
+  z-index: 9;
+  border-radius: 8px;
+}
+.flex-row {
+  position: relative;
+  width: 524px;
+  height: 24px;
+  margin: 19px 0 0 26px;
+  z-index: 7;
+}
+.forgot-password {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 24px;
+  top: 0;
+  left: 356px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 6;
+}
+
+.login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 282px;
+  height: 80px;
+  margin: 51px 0 0 143px;
+  cursor: pointer;
+  background: #ffbbb3;
+  border: none;
+  z-index: 14;
+  border-radius: 8px;
+}
+.register-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 282px;
+  height: 80px;
+  margin: 51px auto 0 auto; /* Adjusted margin */
+  cursor: pointer;
+  background: #ffbbb3;
+  border: none;
+  z-index: 14;
+  border-radius: 8px;
+}
+.register-btn:hover{
+  background-color: #E08D97;
+}
+.login-btn:hover{
+    background-color: #E08D97;
+  }
+.login-4 {
+  flex-shrink: 0;
+  position: relative;
+  height: 44px;
+  color: #37326c;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.884px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 14;
+}
+.sign-up {
+  position: relative;
+  width: 321px;
+  height: 24px;
+  margin: 15px 0 0 123px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-overflow: initial;
+  text-decoration: none; /* Remove underline */
+  white-space: nowrap;
+  color: white; /* Change text color to white */
+  z-index: 3;
+}
+.sign-up1 {
+  position: relative;
+  width: 321px;
+  height: 24px;
+  margin: 15px 0 0 80px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  color: white; /* Change text color to white */
+  text-decoration: none; /* Remove underline */
+  z-index: 3;
+}
+.dont-have-account {
+  position: relative;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: left;
+}
+.dont-have-account1 {
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: center; /* Center the text */
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+/* Additional style for the link */
+.sign-up-5 {
+  color: #ffbbb3;
+  text-decoration: none; /* Remove underline */
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.login-qr-code {
+  position: relative;
+  width: 160px;
+  height: 24px;
+  margin: 15px 0 0 204px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 4;
+}
+.login-6 {
+  position: relative;
+  color: #ffffff;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: left;
+}
+.qr-code {
+  position: relative;
+  color: #ffbbb3;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.38px;
+  text-align: left;
+}
+.elevate-your-fitness {
+  position: absolute;
+  width: 820px;
+  height: 207px;
+  top: 766px;
+  left: 31px;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78.016px;
+  text-align: left;
+  z-index: 1;
+}
+.elevate-your {
+  position: relative;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78.016px;
+  text-align: left;
+}
+.fitness {
+  position: relative;
+  color: #37326c;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78.016px;
+  text-align: left;
+}
+.reach-new-heights {
+  position: relative;
+  color: #000000;
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 78.016px;
+  text-align: left;
+}
+
+  /* Hide the default checkbox */
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  /* Style the label to resemble a checkbox */
+  label {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 10px;
+    height: 24px;
+    top: 0;
+    left: 29px;
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    white-space: nowrap;
+    z-index: 5;
+  }
+
+  /* Create the custom checkbox */
+  label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+
+  /* Style the checked state */
+  input[type="checkbox"]:checked + label::before {
+    background-color: #FFBBB3; /* Change to your desired color */
+  }
+
+  .alert.alert-danger {
+    color: #721c24; /* Dark red color for text */
+    background-color: #f8d7da; /* Light red color for background */
+    border-color: #f5c6cb; /* Light red color for border */
+    border: 1px solid transparent; /* Ensure border is visible */
+    border-radius: 0.5rem; /* Add border radius for rounded corners */
+    font-size: 16px; /* Adjust font size */
+    width: 350px; /* Adjust width as needed */
+    margin: 5px auto; /* Center horizontally with top and bottom margin */
+    display: block; /* Ensures the input elements stack vertically */
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  
+  

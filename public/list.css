@@ -1,0 +1,120 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4a148c;
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header button {
+    background-color: #d81b60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+
+.gym-listings {
+    width: 70%;
+}
+
+.gym-listings h2, .gym-listings h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.gym-card {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.gym-logo img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.gym-details h4 {
+    margin: 0 0 10px;
+    color: #4a148c;
+}
+
+.gym-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.filters {
+    width: 25%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.filters h4, .filters h5 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.filters ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filters ul li {
+    margin-bottom: 10px;
+}
+
+.filters ul li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.errors{
+    color: black; /* Inherit color from parent */
+    text-decoration: none; /* Remove underline */
+}
