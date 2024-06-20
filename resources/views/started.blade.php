@@ -29,19 +29,26 @@
   </div>
 </nav>
 
-<section id="gyms" class="container">
-            <div class="row">
-                @foreach($gyms as $gym)
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <div class="gym-card">
+<div class="container">
+    <section id="gyms" class="container">
+        <div class="row">
+            @foreach($gyms as $gym)
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="gym-card">
                         <img src="{{ asset('uploads/' . $gym->logo) }}" alt="{{ $gym->name }} Logo">
-                            <h3>{{ $gym->name }}</h3>
-                        </div>
+                        <h3>{{ $gym->name }}</h3>
+                        <p><strong>Inclusion:</strong> {{ $gym->inclusion }}</p>
+                        <p><strong>Owner:</strong> {{ $gym->owner }}</p>
+                        <p><strong>Location:</strong> {{ $gym->address }}</p>
+                        <p><strong>Subscribed Members:</strong> {{ $gym->subscribed_members }}</p>
                     </div>
-                @endforeach
-            </div>
-        </section>
-    </div>
+                </div>
+            @endforeach
+        </div>
+    </section>
+</div>
+
+
 </header>
 
 <!-- About -->

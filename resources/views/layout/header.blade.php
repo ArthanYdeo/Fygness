@@ -70,13 +70,7 @@
                             <p>Profile</p>
                         </a>
                     </li>
-                    <!-- Add Reports menu item -->
-                    <li class="nav-item">
-                        <a href="{{ url('admin/reports/staff') }}" class="nav-link @if(Request::is('admin/reports/staff')) active @endif">
-                            <i class="nav-icon fas fa-chart-line"></i>
-                            <p>Reports</p>
-                        </a>
-                    </li>
+                    
 
                 <!-- Staff Navbar -->
                 @elseif(Auth::user()->user_type == 2)

@@ -11,6 +11,8 @@ use Illuminate\Auth\Events\PasswordReset;
 use App\Models\User;
 use App\Models\Gym;
 use App\Models\ActivityLog;
+use App\Models\Subscription;
+
 
 class AuthController extends Controller
 {
@@ -171,8 +173,16 @@ class AuthController extends Controller
     public function getStarted()
     {
         $gyms = Gym::all();
+    
+        // Loop through each gym to count subscribed members
+        foreach ($gyms as $gym) {
+            $subscribed_members_count = Subscription::where('gymname', $gym->name)->count();
+            $gym->subscribed_members = $subscribed_members_count;
+        }
+    
         return view("started", compact('gyms'));
     }
+    
 
     public function selectGym()
     {
